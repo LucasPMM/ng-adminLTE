@@ -61,47 +61,52 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">Menu de navegação</li>
+
+        <li routerLinkActive="active">
+          <a [routerLink]="['/controler']">
+            <i class="fa fa-linux text-success"></i>
+            <span>Painel de Controle</span>
+          </a>
+        </li>
+        <li routerLinkActive="active">
+          <a [routerLink]="['/managers-list']">
+            <i class="fa fa-linux text-danger"></i>
+            <span>Gerentes</span>
+          </a>
+        </li>
+        <li routerLinkActive="active">
+          <a [routerLink]="['/client-list']">
+            <i class="fa fa-linux text-info"></i>
+            <span>Clientes</span>
+          </a>
+        </li>
+
         <li class="treeview link-pointer" routerLinkActive="active menu-open">
           <a>
-            <i class="fa fa-linux"></i> <span>Item</span>
+            <i class="fa fa-linux"></i> <span>Produtos</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="" routerLinkActive="active"><a [routerLink]="['/main']"><i class="fa fa-linux"></i> Sub Item</a></li>
+            <li class="" routerLinkActive="active"><a [routerLink]="['/product-list']"><i class="fa fa-linux"></i> Produtos Disponíveis</a></li>
+            <li class="" routerLinkActive="active"><a [routerLink]="['/product-sold-list']"><i class="fa fa-linux"></i> Produtos Vendidos</a></li>
           </ul>
         </li>
+
         <li routerLinkActive="active">
-          <a [routerLink]="['/main1']">
-            <i class="fa fa-linux text-success"></i>
-            <span>Item 1</span>
-          </a>
-        </li>
-        <li routerLinkActive="active">
-          <a [routerLink]="['/main2']">
-            <i class="fa fa-linux text-danger"></i>
-            <span>Item 2</span>
-          </a>
-        </li>
-        <li routerLinkActive="active">
-          <a [routerLink]="['/main3']">
-            <i class="fa fa-linux text-info"></i>
-            <span>Item 3</span>
-          </a>
-        </li>
-        <li routerLinkActive="active">
-          <a [routerLink]="['/main4']">
+          <a [routerLink]="['/institutional']">
             <i class="fa fa-linux text-warning"></i>
-            <span>Item 4</span>
+            <span>Institucional</span>
           </a>
         </li>
         <li routerLinkActive="active">
-          <a [routerLink]="['/main5']">
+          <a [routerLink]="['/contact']">
             <i class="fa fa-linux text-muted"></i>
-            <span>Item 5</span>
+            <span>Contato</span>
           </a>
         </li>
+
       </ul>
     </section>
     <!-- /.sidebar -->

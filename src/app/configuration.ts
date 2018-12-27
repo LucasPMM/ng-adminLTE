@@ -6,7 +6,7 @@ export const configuration = {
   },
   localStorageKey: 'STORE-CONTROL-APP',
   logoPath: '',
-  skin: 'skin-green',
+  skin: 'skin-blue',
   userDefaultImage: 'assets/default-logo.jpg',
   serverErrorEndpoint: '',
 };

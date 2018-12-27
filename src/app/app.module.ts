@@ -45,6 +45,14 @@ import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password
 
 // Configurations Files
 import { configuration } from './configuration';
+import { GraphControlerComponent } from './pages/graph-controler/graph-controler.component';
+import { ManagersListComponent } from './pages/managers-list/managers-list.component';
+import { ClientListComponent } from './pages/client-list/client-list.component';
+import { ProductListComponent } from './pages/product-list/product-list.component';
+import { ProductSoldListComponent } from './pages/product-sold-list/product-sold-list.component';
+import { CouponsListComponent } from './pages/coupons-list/coupons-list.component';
+import { InstitutionalComponent } from './pages/institutional/institutional.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 @NgModule({
@@ -55,7 +63,15 @@ import { configuration } from './configuration';
     ForgotPasswordComponent,
     LoaderComponent,
     MainComponent,
-    ContentLoaderComponent
+    ContentLoaderComponent,
+    GraphControlerComponent,
+    ManagersListComponent,
+    ClientListComponent,
+    ProductListComponent,
+    ProductSoldListComponent,
+    CouponsListComponent,
+    InstitutionalComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
